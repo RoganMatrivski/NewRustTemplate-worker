@@ -2,5 +2,10 @@ name = "{{project-name}}"
 main = "build/index.js"
 compatibility_date = "{{ "now" | date: "%Y-%m-%d" }}"
 
+[dev]
+ip = "0.0.0.0"
+port = 8800
+local_protocol = "http"
+
 [build]
 command = "cargo install -q worker-build && worker-build --release"
